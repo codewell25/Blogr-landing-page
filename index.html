@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | [Blogr]</title>
+
+    <link rel="stylesheet" href="CSS/Index.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/9c3cc2a6a3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+
+
+        <div class="container">
+
+            <div class="top-section">
+
+                <nav>
+
+                    <div class="logo">
+
+                        <img src="images/logo.svg" alt="Logo">
+
+                    </div>
+
+                    <!-- Desktop Menu -->
+                    <div class="nav-menu-wrapper">
+
+                        <ul class="nav-menu">
+                            <li><a href="#">Product <i class="fa-solid fa-angle-up"></i></a></li>
+                            <li><a href="#">Company <i class="fa-solid fa-angle-up"></i></a></a></li>
+                            <li id="drop-down"><a href="#">Connect
+                                    <i id="arrow-up" class="fa-solid fa-angle-up"></i>
+                                    <i id="arrow-down" style="display: none;" class="fa-solid fa-angle-down"></i>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <ul id="dropdown-content" style="display: none;" class="drop-down-content">
+                            <li> <a href="#">Contact</a> </li>
+                            <li> <a href="#">Newslatter</a> </li>
+                            <li> <a href="#">Linkdien</a> </li>
+                        </ul>
+                    </div>
+
+
+                </nav>
+
+
+                <div class="nav-btns">
+
+                    <button>Login</button>
+                    <button>Sign up</button>
+
+                </div>
+
+            </div>
+
+            <!-- Mob menu -->
+            <div class="nav-mob-wrapper">
+                <div class="logo">
+
+                    <img src="images/logo.svg" alt="Logo">
+
+                </div>
+
+
+                <div id="open-btn" class="mob-menu-btn">
+                    <button><img src="images/icon-hamburger.svg" alt=""></button>
+                </div>
+
+                <divm id="close-btn" class="mob-menu-btn" style="display: none;">
+                    <button><img src="images/icon-close.svg" alt=""></button>
+                </divm>
+
+            </div>
+
+            <!-- Mob menu content -->
+            <div id="mob-nav-menu" class="mob-nav-menu" style="display: none;">
+                <ul>
+                    <li id="mob-nav-title-1">
+                        <a href="#">Product <i id="arrow-product-up" class="fa-solid fa-angle-up"></i>
+                            <i id="arrow-product-down" style="display: none;" class="fa-solid fa-angle-down"></i>
+                        </a>
+
+                        <ul id="product-dropdown-content" style="display: none;">
+                            <li> <a href="#">
+                                    Overview
+                                </a> </li>
+
+                            <li> <a href="#">
+                                    Pricing
+                                </a> </li>
+
+                            <li> <a href="#">
+                                    Marketplace
+                                </a> </li>
+
+                            <li> <a href="#">
+                                    Features
+                                </a> </li>
+
+                            <li> <a href="#">
+                                    Integrations
+                                </a> </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li id="mob-nav-title-2">
+                        <a href="#">Company
+                            <i id="arrow-company-up" class="fa-solid fa-angle-up"></i>
+                            <i id="arrow-company-down" style="display: none;" class="fa-solid fa-angle-down"></i></a>
+
+                        <ul id="company-dropdown-content" style="display: none;">
+                            <li> <a href="#"> About</a></li>
+                            <li> <a href="#"> Team</a></li>
+                            <li> <a href="#">BLog </a></li>
+                            <li> <a href="#">Carrers </a></li>
+                        </ul>
+                    </li>
+
+                    <li id="mob-nav-title-3">
+                        <a href="#">Connect
+                            <i id="arrow-connect-up" class="fa-solid fa-angle-up"></i>
+                            <i id="arrow-connect-down" style="display: none;" class="fa-solid fa-angle-down"></i>
+                        </a>
+
+                        <ul id="connect-dropdown-content" style="display: none;">
+                            <li> <a href="#">Contact</a> </li>
+                            <li> <a href="#">Newslatter</a> </li>
+                            <li> <a href="#">Linkdien</a> </li>
+                        </ul>
+
+                    </li>
+                </ul>
+
+                <div class="mt-3">
+                    <button class="nav-mob-btn-1">
+                        Log in
+                    </button> <br> <br>
+
+                    <button class="nav-mob-btn-2 ">
+                        Sign Up
+                    </button>
+                </div>
+            </div>
+
+            <div class="page-intro text-center">
+
+                <h1>A modern publishing platform</h1>
+                <p>Grow your audience and build your online brand</p>
+
+                <div class="page-intro-btns">
+                    <button class="page-intro-btn-1">Start for free</button>
+                    <button class="page-intro-btn-2">Learn More</button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </header>
+
+    <section class="content-1 container my-5 py-5">
+        <h2 class="text-center  mb-5">Designed for the future</h2>
+
+        <div class="content-1 row align-items-center">
+
+            <div class="col-sm-6">
+
+                <div class="row content">
+                    <h2>Introducing an extensible editor</h2>
+                    <p class="my-2">
+                        Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating
+                        content.
+                        The editor supports management of multiple blogs and allows easy manipulation of embeds such as
+                        images,
+                        videos, and Markdown. Extensibility with plugins and themes provide easy ways to add
+                        functionality
+                        or
+                        change the looks of a blog.
+
+                    </p>
+
+                </div>
+
+                <div class="row my-4 content">
+                    <h2>Robust content management</h2>
+                    <p class="my-2">
+                        Flexible content management enables users to easily move through posts. Increase the usability
+                        of your blog
+                        by adding customized categories, sections, format, or flow. With this functionality, you’re in
+                        full control.
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <img src="images/illustration-editor-desktop.svg" class="img-fluid">
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="container-fluid">
+
+        <div class="row content-2 align-items-center">
+
+            <div class="col-sm-6">
+                <img src="images/illustration-phones.svg">
+
+            </div>
+
+            <div class="col-sm-6 text-white content-2-txt">
+                <h2>State of the Art Infrastructure</h2>
+                <p>
+                    With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast
+                    connectivity.
+                    This ensures your site will load instantly, no matter where your readers are, keeping your site
+                    competitive.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="content-1 container my-5 py-5">
+
+
+
+        <div class="content-1 row align-items-center mt-5">
+
+
+
+            <div class="col-sm-6">
+                <img src="images/illustration-laptop-desktop.svg" class="img-fluid">
+            </div>
+
+            <div class="col-sm-6">
+
+                <div class="row content">
+                    <h2>Free, open, simple</h2>
+                    <p class="my-2">
+                        Blogr is a free and open source application backed by a large community of helpful developers.
+                        It supports
+                        features such as code syntax highlighting, RSS feeds, social media integration, third-party
+                        commenting tools,
+                        and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to
+                        learn.
+
+
+                    </p>
+
+                </div>
+
+                <div class="row my-4 content">
+                    <h2>Powerful tooling</h2>
+                    <p class="my-2">
+
+                        Batteries included. We built a simple and straightforward CLI tool that makes customization and
+                        deployment a breeze, but
+                        capable of producing even the most complicated sites.
+
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <div class="container text-white">
+            <div class="row">
+
+                <div class="col-sm-3 footer-menu">
+                    <img src="images/logo.svg" alt="">
+                </div>
+
+                <div class="col-sm-3 footer-menu">
+
+                    <h3>Product</h3>
+                    <ul>
+                        <li> <a href="#">
+                                Overview
+                            </a> </li>
+
+                        <li> <a href="#">
+                                Pricing
+                            </a> </li>
+
+                        <li> <a href="#">
+                                Marketplace
+                            </a> </li>
+
+                        <li> <a href="#">
+                                Features
+                            </a> </li>
+
+                        <li> <a href="#">
+                                Integrations
+                            </a> </li>
+                    </ul>
+
+                </div>
+
+                <div class="col-sm-3 footer-menu">
+                    <h3>Company</h3>
+                    <ul>
+                        <li> <a href="#"> About</a></li>
+                        <li> <a href="#"> Team</a></li>
+                        <li> <a href="#">BLog </a></li>
+                        <li> <a href="#">Carrers </a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-3 footer-menu">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li> <a href="#">Contact</a> </li>
+                        <li> <a href="#">Newslatter</a> </li>
+                        <li> <a href="#">Linkdien</a> </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </footer>
+
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

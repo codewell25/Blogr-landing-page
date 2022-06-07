@@ -1,0 +1,373 @@
+$body: 'Overpass', sans-serif;
+$heading: 'Ubuntu', sans-serif;
+
+button,
+p {
+    font-family: $body;
+}
+
+h1,
+h2 {
+    font-family: $heading;
+}
+
+header {
+    background-image: url(../images/bg-pattern-intro-desktop.svg), linear-gradient(hsla(13, 100%, 72%, 1), hsla(353, 100%, 62%, 0.8));
+    background-repeat: no-repeat, repeat;
+    background-position: center, center;
+    background-size: 2000px, cover;
+
+    border-bottom-left-radius: 100px;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu-wrapper {
+    position: relative;
+}
+
+.nav-menu {
+    padding: 0;
+    margin: 0 30px;
+    display: flex;
+    list-style: none;
+
+    li {
+        margin-right: 20px;
+    }
+
+    a {
+
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+            color: white;
+            text-decoration: underline;
+        }
+    }
+}
+
+.drop-down-content {
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    list-style: none;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px 25px;
+    margin: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+    a {
+        color: rgb(102, 99, 99);
+        text-decoration: none;
+
+        &:hover {
+            color: black;
+            text-decoration: underline;
+        }
+    }
+}
+
+.nav-btns {
+
+    button {
+        background: none;
+        border: none;
+        color: white;
+        border-radius: 20px;
+        padding: 5px 20px;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+    }
+}
+
+.page-intro {
+    padding: 140px 0;
+    color: white;
+
+    h1 {
+        font-family: $heading;
+    }
+}
+
+.page-intro-btns {
+    margin-top: 50px;
+}
+
+.page-intro-btn-1 {
+    height: 40px;
+    width: 140px;
+    border-radius: 20px;
+    background-color: white;
+    border: none;
+    color: hsl(356, 100%, 66%);
+
+    &:hover {
+        color: white;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+}
+
+.page-intro-btn-2 {
+    @extend .page-intro-btn-1;
+    background-color: #FF6261;
+    border: 1px solid white;
+    color: white;
+    margin-left: 20px;
+
+    &:hover {
+        color: #FF6261;
+        background-color: white;
+    }
+
+}
+
+.nav-mob-wrapper {
+    display: none;
+}
+
+.content-1 {
+    h2 {
+        color: hsl(208, 49%, 24%);
+    }
+
+    P {
+        line-height: 2;
+        color: hsl(207, 13%, 34%)
+    }
+}
+
+.content {
+    padding: 0 60px;
+}
+
+.content-2 {
+    background-color: hsl(237, 17%, 21%);
+    border-radius: 0 80px;
+    position: relative;
+    height: 400px;
+
+    img {
+        position: absolute;
+        top: -80px;
+        left: 100px;
+    }
+}
+
+.content-2-txt {
+    h2 {
+        font-size: 25px;
+    }
+
+    P {
+        font-size: 15px;
+    }
+
+
+}
+
+footer {
+    background-color: hsl(240, 10%, 16%);
+    padding: 100px;
+    border-top-right-radius: 100px;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        line-height: 2;
+    }
+
+    li:hover {
+        a {
+            text-decoration: underline;
+            color: rgba(221, 219, 219, 0.8);
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: rgba(221, 219, 219, 0.8);
+
+    }
+}
+
+
+
+@media (min-width:769px) and (max-width:1020px) {
+
+    .content-2 {
+        height: 250px;
+
+        img {
+            left: 0;
+            width: 400px;
+        }
+    }
+
+    .content {
+        padding: 0;
+
+        h2 {
+            font-size: 20px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        P {
+            text-align: justify;
+            font-size: 12px;
+        }
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .footer-menu {
+        margin: 30px 0;
+    }
+
+    .content-2 {
+        height: 500px;
+        padding: 50px 20px;
+
+        img {
+            position: relative;
+            left: 0;
+            width: 200px;
+            top: 0;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        P {
+            font-size: 15px;
+        }
+    }
+
+    .content-1 {
+        flex-direction: column-reverse;
+    }
+
+    .content {
+        padding: 0 20px;
+
+        P {
+            text-align: justify;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-top: 30px;
+            text-align: center;
+        }
+    }
+
+    .top-section {
+        display: none;
+    }
+
+    .nav-mob-wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 30px 0;
+    }
+
+    .mob-menu-btn {
+        button {
+            background: none;
+            border: none;
+        }
+    }
+
+    .page-intro {
+
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+
+    .mob-nav-menu {
+        display: block;
+        background-color: white;
+        position: absolute;
+        width: 95%;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            border-bottom: 1px solid black;
+        }
+
+        li {
+            margin: 20px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        i {
+            color: #FF6261;
+        }
+    }
+
+    #product-dropdown-content,
+    #company-dropdown-content,
+    #connect-dropdown-content {
+        border-bottom: none;
+        line-height: 1;
+        background-color: rgba(209, 204, 204, 0.5);
+        padding: 10px 0;
+        margin: 10px auto;
+        width: 80%;
+        border-radius: 10px;
+
+
+        a {
+            font-size: 13px;
+        }
+    }
+
+    .nav-mob-btn-1,
+    .nav-mob-btn-2 {
+        width: 130px;
+        height: 40px;
+    }
+
+    .nav-mob-btn-1 {
+        background: none;
+        border: none;
+    }
+
+    .nav-mob-btn-2 {
+        background-color: #FF6261;
+        border: none;
+        color: white;
+        border-radius: 20px;
+    }
+}
